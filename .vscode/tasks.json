@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-and-run",
+      "type": "shell",
+      "command": "mkdir -p build && clang++ -std=c++17 -Iinclude src/main.cpp -o build/main && ./build/main",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
